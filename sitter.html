@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 10px;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 20px;
+            background-color:#85DCBA;
+        }
+
+        form {
+            padding-top: 50px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .amount {
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pet sitter</h1>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pet sitters offer comprehensive care for your pets in the comfort of
+        their own home. This includes feeding, providing fresh water, administering medication if needed, and engaging
+        in play and cuddle time. Our pet sitters are experienced in handling various pets and can adapt to each pet's
+        unique personality and preferences.</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a pet Sitters service that offers a variety of services to our
+        clients.Our clients are extremely friendly towards your floofs and takes care of them very dearly.
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our pet sitting service goes beyond the basics of care. In addition to
+        meeting your pet's physical needs, our sitters provide companionship and attention, reducing the stress often
+        associated with being away from their owners. We follow your pet's established routines, ensuring a smooth and
+        comfortable experience. Whether it's a short weekend or an extended vacation, your pets will thrive in the
+        familiar surroundings of their home, receiving the personalized care they deserve.
+    </p>
+    <h3 style="padding-top: 30px; color: orangered; font-size: 40px;">Apply For service</h3>
+    <form action="#" method="post">
+        <h2>Welcome!</h2>
+        <label for="ownerName">Owner's Name:</label>
+        <input type="text" id="ownerName" name="ownerName" required>
+
+        <label for="petName">Pet's Name:</label>
+        <input type="text" id="petName" name="petName" required>
+
+        <label for="petType">Type of Pet:</label>
+        <input type="text" id="petType" name="petType" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="petWalker">Pet Walker</option>
+            <option value="petSitter">Pet Sitter</option>
+            <option value="petCleaner">Pet Cleaner</option>
+        </select>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="timings">Timings:</label>
+        <input type="text" id="timings" name="timings" required>
+
+        <div class="payment-section">
+            <label for="amount" class="amount">Amount: $300</label>
+            <button type="button" onclick="makePayment()">Do Payment</button>
+        </div>
+
+        <div class="submit-btn">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script>
+        function makePayment() {
+            alert('Payment Successful!');
+        }
+    </script>
+</body>
+
+</html>

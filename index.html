@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="hire.css">
+    <title>Section Design</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="home.html" class="back-button"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></a>
+            <div class="logo">TINY PAWS</div>
+        <a href="index.html"><i id="paw" <i class="fa-solid fa-paw fa-beat-fade fa-xl" style="color: #e3770c;"></i></a>
+            <div class="search-container">
+                <input type="text" placeholder="Search For Services......">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <a href="#w">SERVICES</a>
+            <a href="#h">EARN MONEY</a>
+            <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+            <div class="user-circle" onclick="toggleDropdown()">
+                <img src="paw.jpg" alt="User Image">
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="sigin.html">Sign In</a>
+                    <!link this to signin form>
+                        <a href="#">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="walk.avif" style="width:100%">
+          <div class="text">Pet Walkers <a href="#w"><button class="d">Visit</button></a></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pet.avif" style="width:100%">
+          <div class="text">Pet Sitters <a href="#s"><button class="d">Visit</button></a></div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="bath.jpg" style="width:100%">
+          <div class="text">Pet cleaning <a href="#c"><button class="d">Visit</button></a></div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+<h1 class="heading">SERVICES AVAILABLE </h1>
+    <section class="section-container" id="w">
+        <img src="good-boy-beautiful-young-woman-walking-with-her-dog-while-spending-time-outdoors_425904-11673.jpg" alt="Your Image">
+        <div class="info">
+            <h2>Pet Walkers</h2>
+            <p>Pet walkers provide the essential service of taking dogs for regular walks, ensuring they get the exercise and mental stimulation they need. Experienced and caring pet walkers tailor the walks to the dog's size, breed, and energy level, promoting overall health and well-being.</p>
+            <a href="walker.html" class="know-more-btn">Know More</a>
+        </div>
+    </section>
+
+    <section class="section-container" id="s">
+        <img src="pet sitters.jpg" alt="Your Image">
+        <div class="info">
+            <h2>Pet Sitters</h2>
+            <p>Pet sitters offer a valuable service for pet owners who need someone trustworthy to care for their pets when they are away. Whether it's a weekend getaway or an extended vacation, professional pet sitters ensure your pets receive love, attention, and proper care in the familiar surroundings of their home.</p>
+            <a href="sitter.html" class="know-more-btn">Know More</a>
+        </div>
+    </section>
+
+    <section class="section-container" id="c">
+        <img src="bath.jpg" alt="Your Image">
+        <div class="info">
+            <h2>Pet cleaning </h2>
+            <p>Pet cleaning services involve grooming and maintaining the hygiene of your pets. This includes bathing, brushing, nail trimming, and other grooming tasks. Professional pet cleaners use safe and effective products to keep your pets clean, healthy, and looking their best.            </p>
+            <a href="cleaner.html" class="know-more-btn">Know More</a>
+        </div>
+    </section>
+
+    <section>
+        <div id="h">
+            <h2 class="pet-profile-header">EARN MONEY
+                <span class="tooltip">
+                    <i class="fas fa-info-circle info-icon"></i>
+                    <div class="tooltiptext">
+                        <p>These are services that are listed by the people across the cpmmunity.Make sure u create your id before applying for the work</p>
+                    </div>
+                </span>
+            </h2>
+        </div>
+        <div class="product-gallery">
+            <div class="product-cont">
+                <img src="job 1.jpg">
+                <h3>OWNER:RIYA <br>
+                    PET:snoopy <br>
+                    Address:hebbal
+                </h3>
+                <p>JOB:pet sitting</p>
+                <button class="buy-1">APPLY</button>
+            </div>
+
+            <div class="product-cont">
+                <img src="job2.jpeg">
+                <h3>Owner: Akshay Sharma <br>
+                    Pet: Whiskers <br>
+                    Address: Banashankari</h3>
+                <p>JOB:Pet cleaner</p>
+                <button class="buy-2">APPLY</button>
+            </div>
+
+
+            <div class="product-cont">
+                <img src="job4.jpg">
+                <h3>Owner: Priya Patel <br>
+                    Pet: Simba and Milo<br>
+                    Address: Koramangala</h3>
+                <p>JOB:pet sitting</p>
+                <button class="buy-3">APPLY</button>
+            </div>
+
+            <div class="product-cont">
+                <img src="job3.jpg">
+                <h3>Owner: Rajesh Gupta <br>
+                    Pet: Luna <br>
+                    Address: Malleshwaram</h3>
+                <p>JOB:pet walker</p>
+                <button class="buy-4">APPLY</button>
+            </div>
+        </div>
+
+        <div class="product-gallery">
+            <div class="product-cont">
+                <img src="job5.jpg">
+                <h3>Owner : Aishwarya Nair <br>
+                    Pet: Bubbles <br>
+                    Address: Mysuru 
+                </h3>
+                <p>JOB:pet sitting</p>
+                <button class="buy-1">APPLY</button>
+            </div>
+
+            <div class="product-cont">
+                <img src="job 6].jpg">
+                <h3>Owner: Deepika Menon <br>
+                    Pet: Snickers <br>
+                    Address: Coimbatore </h3>
+                <p>JOB:Pet sitting</p>
+                <button class="buy-2">APPLY</button>
+            </div>
+
+
+            <div class="product-cont">
+                <img src="job7.jpg">
+                <h3>Owner: Arjun Kumar <br>
+                    Pet: Gizmo <br>
+                    Address: Chennai </h3>
+                <p>JOB:pet sitting And Walker</p>
+                <button class="buy-3">APPLY</button>
+            </div>
+
+            <div class="product-cont">
+                <img src="job8.jpg">
+                <h3>Owner: Meera Rajan <br>
+                    Pet: Tinker <br>
+                    Address: Trivandrum </h3>
+                <p>JOB:pet walker And sitter</p>
+                <button class="buy-4">APPLY</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>we as tiny paw wishes your pet happiness and well-being</p>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                </div>
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Your Website. All rights reserved.</p>
+            </div>
+            <button id="scrollToTopBtn" onclick="scrollToTop()">&#9650;</button>
+        </footer>
+        </footer>
+    <script src="hire.js"></script>
+</body>
+</html>

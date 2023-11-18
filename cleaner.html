@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+            margin: 10px;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 20px;
+            background-color: #85DCBA;
+        }
+
+        form {
+            padding-top: 50px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .payment-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .amount {
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pet cleaners</h1>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pet cleaning services encompass a range of grooming activities to keep
+        your pets clean and healthy. This includes bathing, brushing, nail trimming, ear cleaning, and dental care. Our
+        professional pet cleaners use gentle products suitable for each pet's specific coat type and skin condition.</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a pet cleaner service that offers a variety of services to our
+        clients.Our clients are extremely friendly towards your floofs and takes care of them very dearly.
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maintaining your pet's hygiene is a key aspect of responsible pet
+        ownership. Our pet cleaning services are designed to address both the aesthetic and health-related aspects of
+        grooming. Regular baths contribute to a clean and shiny coat, while nail trimming prevents discomfort and
+        potential injuries. Our thorough grooming sessions also allow us to check for any skin issues, lumps, or
+        abnormalities, enabling early detection of health concerns. By choosing our pet cleaning service, you invest in
+        the overall well-being and happiness of your beloved companions.
+    </p>
+    <h3 style="padding-top: 30px; color: orangered; font-size: 40px;">Apply For service</h3>
+    <form action="#" method="post">
+        <h2>Welcome!</h2>
+        <label for="ownerName">Owner's Name:</label>
+        <input type="text" id="ownerName" name="ownerName" required>
+
+        <label for="petName">Pet's Name:</label>
+        <input type="text" id="petName" name="petName" required>
+
+        <label for="petType">Type of Pet:</label>
+        <input type="text" id="petType" name="petType" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="petWalker">Pet Walker</option>
+            <option value="petSitter">Pet Sitter</option>
+            <option value="petCleaner">Pet Cleaner</option>
+        </select>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="timings">Timings:</label>
+        <input type="text" id="timings" name="timings" required>
+
+        <div class="payment-section">
+            <label for="amount" class="amount">Amount: $300</label>
+            <button type="button" onclick="makePayment()">Do Payment</button>
+        </div>
+
+        <div class="submit-btn">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script>
+        function makePayment() {
+            alert('Payment Successful!');
+        }
+    </script>
+</body>
+
+</html>
